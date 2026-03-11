@@ -16,17 +16,16 @@ body {
         color: #FFFFFF;
         font-size: 22px;
         font-weight: bold;
-        font-family: "roboto", sans-serif;
     }
 }
 
-.postSection {
+.postContainer {
     display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
 
 
-    .postContent {
+    .postForm {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -101,9 +100,62 @@ body {
 
     }
 
+    .postList {
+        .postItem {
+            padding: 12px;
+
+            .postHeader {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #7695EC;
+                padding: 15px;
+                border-radius: 10px 10px 0 0;
+                height: 35px;
+                color: white;
+
+                h2 {
+                    font-size: 18px;
+                    font-weight: 700;
+                    margin: 0;
+                }
+
+                .editDelete {
+                    display: flex;
+                    gap: 10px;
+
+                    button {
+                        background-color: transparent;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .postContent {
+                margin: 0;
+                padding: 15px;
+                border: 1px solid #000000;
+                border-top: none;
+                border-radius: 0 0 10px 10px;
+
+                .username {
+                    padding: 0 0 10px 0;
+                    color: #777777;
+                }
+
+                p {
+                    text-align: justify;
+                    font-size: 16px;
+                    color: #000000;
+                    margin: 5px 0;
+                }
+            }
+        }
+    }
+
     ::placeholder {
         text-indent: 10px;
-        font-family: "roboto", sans-serif;
         font-size: 16px;
         line-height: 30px;
     }

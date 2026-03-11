@@ -1,0 +1,108 @@
+.editOverlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.055);
+    height: 100vh;
+    z-index: 1000;
+
+    .editContent {
+        border-radius: 10px;
+        background-color: #fff;
+        width: 300px;
+        padding: 0 0 20px 20px;
+
+
+        @media (min-width: 768px) {
+            width: 500px;
+        }
+
+        h3 {
+
+            font-size: 22px;
+            color: black;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 24px;
+            line-height: 0.5;
+            font-size: 16px;
+            color: black;
+        }
+
+        .editInput {
+            width: 260px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            text-indent: 10px;
+
+            @media (min-width: 768px) {
+                width: 460px;
+            }
+        }
+
+        .editTextarea {
+            width: 260px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            height: 60px;
+            text-indent: 10px;
+            line-height: 30px;
+
+            @media (min-width: 768px) {
+                width: 460px;
+            }
+        }
+
+        .editActions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: flex-end;
+            padding: 0 20px;
+
+            .cancelEdit {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 14px;
+                cursor: pointer;
+                font-size: 1em;
+                font-weight: bold;
+                width: 120px;
+                height: 35px;
+                margin-top: 20px;
+                border: 1px solid #999999;
+                background-color: white;
+            }
+
+            .saveEdit {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 14px;
+                cursor: pointer;
+                font-size: 1em;
+                font-weight: bold;
+                width: 120px;
+                height: 35px;
+                margin-top: 20px;
+                background-color: #4CAF50;
+                color: white;
+            }
+        }
+    }
+}

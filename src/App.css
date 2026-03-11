@@ -54,7 +54,7 @@ body {
       }
     }
 
-    .button {
+    .action {
       display: flex;
       justify-content: flex-end;
       padding: 0 10px;
@@ -71,8 +71,12 @@ body {
         border: none;
         cursor: pointer;
         margin-top: 20px;
+
+        &:disabled {
+          background-color: #A9A9A9;
+          cursor: not-allowed;
+        }
       }
     }
   }
-
 }
