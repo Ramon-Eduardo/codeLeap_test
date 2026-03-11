@@ -1,0 +1,115 @@
+body {
+    background-color: #DDDDDD;
+}
+
+.headerTitle {
+    background-color: #7695EC;
+    display: flex;
+
+    @media (min-width: 600px) {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        margin-left: 37px;
+        color: #FFFFFF;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: "roboto", sans-serif;
+    }
+}
+
+.postSection {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+
+
+    .postContent {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 24px;
+        padding: 16px;
+        border: 1px solid #000000;
+        border-radius: 16px;
+
+        .title {
+            h3 {
+                font-family: "roboto", sans-serif;
+                font-size: 22px;
+                font-weight: bold;
+            }
+        }
+
+        span {
+            font-family: "roboto", sans-serif;
+            font-size: 16px;
+        }
+
+        .titleContent {
+            .postTitle {
+                font-family: "roboto", sans-serif;
+                text-indent: 10px;
+                line-height: 30px;
+                width: 270px;
+                height: 30px;
+                border-radius: 10px;
+                border: 1px solid #777777;
+                text-align: justify;
+
+
+                @media (min-width: 600px) {
+                    width: 510px;
+                }
+            }
+
+        }
+
+        .textContent {
+            font-family: "roboto", sans-serif;
+            font-size: 15px;
+            text-indent: 10px;
+            line-height: 30px;
+            width: 255px;
+            border-radius: 10px;
+            height: 60px;
+            border: 1px solid #777777;
+            text-align: justify;
+            padding: 10px;
+
+            @media (min-width: 600px) {
+                width: 495px;
+                height: 70px;
+            }
+        }
+
+        .button {
+            display: flex;
+            align-self: flex-end;
+
+            button {
+                background-color: #7695EC;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    ::placeholder {
+        text-indent: 10px;
+        font-family: "roboto", sans-serif;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    @media (min-width: 600px) {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
