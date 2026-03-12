@@ -2,8 +2,10 @@
 
 Desafio técnico desenvolvido como parte do processo seletivo da CodeLeap. Trata-se de uma aplicação "single-page" (SPA) que simula uma rede social simplificada, permitindo aos usuários compartilhar pensamentos, além de editar e excluir suas próprias postagens.
 
-<img width="769" height="653" alt="Captura de tela 2026-03-12 153625" src="https://github.com/user-attachments/assets/e5e38cb8-ec9b-4296-9fc3-3544755c7fe3" />
-<img width="659" height="824" alt="Captura de tela 2026-03-12 160309" src="https://github.com/user-attachments/assets/364c2159-d525-4519-a5ca-539a5fcb9ea3" />
+<img width="1918" height="956" alt="Captura de tela 2026-03-12 180841" src="https://github.com/user-attachments/assets/c677b1ae-067c-4a67-bc4c-98029db685fb" />
+
+<img width="1917" height="956" alt="Captura de tela 2026-03-12 180855" src="https://github.com/user-attachments/assets/824d8463-b595-4a0c-95c2-d35273cc6d32" />
+
 
 ## 📋 Funcionalidades
 
