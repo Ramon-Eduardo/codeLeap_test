@@ -114,7 +114,7 @@ export function Post({ username }) {
                         <div className="content">
                             <textarea value={content} className="textContent" placeholder='Content here' onChange={(e) => setContent(e.target.value)} ></textarea>
                         </div>
-                        <div className="button">
+                        <div className="actions">
                             <button onClick={createPost}>Create</button>
                         </div>
                     </div>
@@ -124,8 +124,8 @@ export function Post({ username }) {
                                 <div className="postHeader">
                                     <h2>{post.title}</h2>
                                     {username === post.username && <div className="editDelete">
-                                        <button onClick={() => setOpenDeleteModal(true)}> <Delete /> </button>
-                                        <button onClick={() => setOpenEditModal(true)}> <Edit /> </button>
+                                        <button className="editDeleteBtn" onClick={() => setOpenDeleteModal(true)}> <Delete /> </button>
+                                        <button className="editBtn" onClick={() => setOpenEditModal(true)}> <Edit /> </button>
                                     </div>}
                                     <DeleteModal isOpen={openDeleteModal}
                                         onClose={() => setOpenDeleteModal(false)}
@@ -141,11 +141,11 @@ export function Post({ username }) {
                                 </div>
                                 <div className="postContent">
                                     <p className="username">@{post.username}</p>
-                                    <p>{post.content}</p>
+                                    <p className="content">{post.content}</p>
                                 </div>
                             </div>
                         ))}
-                        {postList?.length == 0 && <p>No posts available.</p>}
+                        {postList?.length == 0 && <p className="noPosts">No posts available.</p>}
                     </div>
                 </div>
             </section>

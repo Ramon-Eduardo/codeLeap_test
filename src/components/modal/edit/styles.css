@@ -85,6 +85,12 @@
                 margin-top: 20px;
                 border: 1px solid #999999;
                 background-color: white;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+
+                &:hover {
+                    background-color: #f0f0f0;
+                    transform: scale(1.05);
+                }
             }
 
             .saveEdit {
@@ -102,6 +108,12 @@
                 margin-top: 20px;
                 background-color: #4CAF50;
                 color: white;
+                transition: background-color 0.3s ease, transform 0.2s ease;
+
+                &:hover {
+                    background-color: #45a049;
+                    transform: scale(1.05);
+                }
             }
         }
     }
