@@ -1,6 +1,6 @@
 # CodeLeap Network
 
-Desafio técnico desenvolvido como parte do processo seletivo da CodeLeap. Trata-se de uma aplicação "single-page" (SPA) que simula uma rede social simplificada, permitindo aos usuários compartilhar pensamentos, além de editar e excluir suas próprias postagens.
+Desafio técnico desenvolvido como parte do processo seletivo da CodeLeap. Trata-se de uma aplicação "single-page" (SPA) com responsividade, que simula uma rede social simplificada, permitindo aos usuários compartilhar pensamentos, além de editar e excluir suas próprias postagens.
 
 <img width="1918" height="956" alt="Captura de tela 2026-03-12 180841" src="https://github.com/user-attachments/assets/c677b1ae-067c-4a67-bc4c-98029db685fb" />
 
@@ -21,6 +21,7 @@ A aplicação possui duas telas principais:
     *   **Criação**: Permite criar novos posts com Título e Conteúdo.
     *   **Edição**: Usuários podem editar apenas os posts criados por eles mesmos (validação via username). A edição é feita através de um modal.
     *   **Exclusão**: Usuários podem excluir seus próprios posts, com um modal de confirmação para evitar cliques acidentais.
+    *   **Responsividade**: Interface totalmente adaptável para dispositivos móveis, tablets e desktops, garantindo uma boa experiência em qualquer tela.
 
 ## 🚀 Tecnologias Utilizadas
 
