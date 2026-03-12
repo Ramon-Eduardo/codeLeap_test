@@ -1,6 +1,6 @@
 import './styles.css';
 
-const DeleteModal = ({ onClose, onDelete, isOpen }) => {
+export const DeleteModal = ({ onClose, onDelete, isOpen }) => {
     if (isOpen) {
         return (
             <div className="modalOverlay">

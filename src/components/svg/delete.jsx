@@ -13,3 +13,4 @@ export const Delete = () => (
     </svg>
 );
 
+export default Delete;

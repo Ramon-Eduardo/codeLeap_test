@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import "../edit/styles.css";
 
-const EditModal = ({ onClose, onEdit, isOpen, currentTitle, currentContent }) => {
+export const EditModal = ({ onClose, onEdit, isOpen, currentTitle, currentContent }) => {
     const [newTitle, setNewTitle] = useState("");
     const [newContent, setNewContent] = useState("");
 

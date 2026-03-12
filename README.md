@@ -1,16 +1,77 @@
-# React + Vite
+# CodeLeap Network
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Desafio técnico desenvolvido como parte do processo seletivo da CodeLeap. Trata-se de uma aplicação "single-page" (SPA) que simula uma rede social simplificada, permitindo aos usuários compartilhar pensamentos, além de editar e excluir suas próprias postagens.
 
-Currently, two official plugins are available:
+## 📋 Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A aplicação possui duas telas principais:
 
-## React Compiler
+1.  **Tela de Login (Signup)**
+    *   O usuário insere seu nome de usuário (username) para entrar na plataforma.
+    *   O botão "ENTER" só é habilitado quando um nome é preenchido.
+    *   O estado do nome de usuário é preservado durante a sessão.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+2.  **Feed de Postagens (Main Screen)**
+    *   **Visualização**: Lista todas as postagens retornadas pela API.
+    *   **Criação**: Permite criar novos posts com Título e Conteúdo.
+    *   **Edição**: Usuários podem editar apenas os posts criados por eles mesmos (validação via username). A edição é feita através de um modal.
+    *   **Exclusão**: Usuários podem excluir seus próprios posts, com um modal de confirmação para evitar cliques acidentais.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*   **[React](https://react.dev/)** (v19) - Biblioteca JavaScript para interface de usuário.
+*   **[Vite](https://vitejs.dev/)** - Build tool rápida para desenvolvimento frontend.
+*   **CSS3** - Estilização da aplicação.
+*   **Fetch API** - Para consumo dos endpoints da API REST.
+
+## 🔧 Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado em sua máquina:
+*   [Node.js](https://nodejs.org/en/) (versão 16 ou superior)
+*   npm (gerenciador de pacotes padrão do Node)
+
+## 📦 Como rodar o projeto
+
+1.  **Clone o repositório** (se aplicável) ou navegue até a pasta do projeto:
+    ```bash
+    cd codeLeap_test
+    ```
+
+2.  **Instale as dependências**:
+    ```bash
+    npm install
+    ```
+
+3.  **Inicie o servidor de desenvolvimento**:
+    ```bash
+    npm run dev
+    ```
+
+4.  **Acesse a aplicação**:
+    Abra seu navegador e acesse o endereço indicado no terminal (geralmente `http://localhost:5173`).
+
+## 📂 Estrutura de Pastas
+
+```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── modal/           # Modais da aplicação
+│   │   ├── delete/      # Modal de confirmação de exclusão
+│   │   └── edit/        # Modal de edição de post
+│   ├── post/            # Componente principal do Feed
+│   └── svg/             # Ícones SVG (Edit, Delete)
+├── App.jsx              # Componente raiz e gerenciamento de rotas simples
+├── App.css              # Estilos globais do App
+├── main.jsx             # Ponto de entrada da aplicação React
+└── ...
+```
+
+## 🔗 API
+
+O projeto consome a API pública de testes da CodeLeap:
+*   **Base URL**: `https://dev.codeleap.co.uk/careers/`
+*   **Métodos suportados**: `GET`, `POST`, `PATCH`, `DELETE`
+
+---
+
+Desenvolvido por **Ramon Eduardo** 🚀
